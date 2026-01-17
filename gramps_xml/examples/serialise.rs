@@ -1,4 +1,4 @@
-use gramps_rs::types::{
+use gramps_xml::types::{
     Database,
     people::{People, Person},
 };
@@ -14,6 +14,6 @@ fn main() {
         ..Default::default()
     });
 
-    let s = gramps_rs::to_string(db).unwrap();
+    let s = gramps_xml::to_string(db).unwrap();
     println!("{s}");
 }
