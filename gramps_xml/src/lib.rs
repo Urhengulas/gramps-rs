@@ -1,3 +1,13 @@
+//! Rust library to work with Gramps XML files. Implements `GRAMPS XML format 1.7.2`.
+//!
+//! > ⚠️ Note that this library is very experimental ⚠️
+//! > 
+//! > Also the Rust types are pretty weird, because they reflect the XML data structure.
+//!
+//! ```
+#![doc = include_str!("../examples/manipulate.rs")]
+//! ```
+
 pub mod types;
 
 use crate::types::Database;
