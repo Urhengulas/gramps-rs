@@ -4,7 +4,7 @@ use gramps_xml::types::{
 };
 
 fn main() {
-    // Read a Gramp XML file
+    // Read a Gramps XML file
     let s = include_str!("../example.gramps");
     let mut db: Database = gramps_xml::from_str(s).unwrap();
 
@@ -28,7 +28,7 @@ fn main() {
     people.person = Some(persons);
     db.people = Some(people);
 
-    // Write as Gramp XML
+    // Write as Gramps XML
     let s = gramps_xml::to_string(db).unwrap();
     println!("{s}");
 }
