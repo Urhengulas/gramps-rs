@@ -1,3 +1,7 @@
 [workspace]
 members = ["gramps_xml"]
 resolver = "3"
+
+[workspace.package]
+license = "MIT"
+repository = "https://github.com/urhengulas/gramps-rs"

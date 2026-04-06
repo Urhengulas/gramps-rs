@@ -1,7 +1,12 @@
 [package]
+description = "Rust library to work with Gramps XML files."
+documentation = "https://docs.rs/gramps_xml"
+edition = "2024"
 name = "gramps_xml"
 version = "0.1.0"
-edition = "2024"
+
+license.workspace = true
+repository.workspace = true
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
